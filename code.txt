@@ -6,8 +6,8 @@ var loadScript = (src, callback) => {
     document.head.appendChild(script);
 }
 
-loadScript("https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js", ()=>{
-loadScript("https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js", ()=>{
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js", ()=>{
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/md5.js", ()=>{
 var username = "username (usually your number or email, not your id)";
 var password = "password";
 

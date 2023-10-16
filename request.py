@@ -20,7 +20,7 @@ class Auth():
     LOGIN_URL="" # removed since the url doesnt function as intended
     START="&&&START&&&"
     def login_tui(self, sid):
-        self.login(input("Go to account.xiaomi.com,log in and paste the code inside code.txt\n(dont forget to change the username and password or else it will fail)\nto devtools console (press f12 then select console) then copypaste the response to here: ".format(self.LOGIN_URL.format(sid)))) # please edit this,this is so bad
+        self.login(input("Go to account.xiaomi.com, log in and paste the javascript code from code.txt into your dev console (press F12 and select console in your browser)\n(dont forget to change the username and password in the code.txt file.\nCopy Paste the result from the command into here: ".format(self.LOGIN_URL.format(sid)))) # please edit this,this is so bad
     def login(self, data):
         if data[:len(self.START)] != self.START:
             raise UserError("invalid data (missing or invalid &&& section)", 1)
